@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="static\style1.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="main_body">
+        <div class="wrapper">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">MENU</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONTACT</a>
+                        </li>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="contanier">
+                <div class="contanier_left">
+                    <p><span>W</span>hat do you want to do ?</p>
+                </div>
+                <div class="contanier_right">
+                    <form action="{{url_for('movie_rocommend')}}" method="post">
+                        <button class="btn_movie" , name="MOVIE RECOMMENDATION">MOVIE RECOMMENDATION</button>
+                    </form>
+                    <form action="{{url_for('music_rocommend')}}" method="post">
+                        <button class="btn_music" , name="MUSIC RECOMMENDATION">MUSIC RECOMMENDATION</button>
+                    </form>
+
+                    <form action="{{url_for('Firstsearching_book')}}" method="post">
+                        <button class="btn_book" , name="BOOK RECOMMENDATION">BOOK RECOMMENDATION</button>
+                    </form>
+
+                </div>
+            </div>
+
+
+
+
+            <!-- <nav>
+                <a href="#">Home</a>
+                <a href="#">Menu</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </nav>
+
+            <div class="wrapper">
+                <div class="content">
+                    <h1 class="h1"><span class="first-letter">W</span>hat do you want to do? </h1>
+                </div>
+
+                <div class="buttons">
+                    <div class="container">
+                        <div class="hover-box">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6">
+                                    <a class="dedcription-btn" href="#">
+                                        <span class="name-descripeion">MOVIE RECOMMENDATION</span>
+                                        <div class="btn-icon">
+                                            <i class="far fa-lightbulb"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-sm-12 col-md-6">
+                                    <a class="dedcription-btn" href="#">
+                                        <span class="name-descripeion">MUSIC RECOMMENDATION</span>
+                                        <div class="btn-icon heart">
+                                            <i class="fas fa-heartbeat"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-sm-12 col-md-6">
+                                    <a class="dedcription-btn" href="#">
+                                        <span class="name-descripeion">BOOK RECOMMENDATION</span>
+                                        <div class="btn-icon book">
+                                            <i class="fas fa-book-reader"></i>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!-- <footer class="pc">
+            <a href="https://github.com/deepkothari12" class="github"><ion-icon class="fa fa-github fa-3x"
+                aria-hidden="true" name="logo-github"></ion-icon></a>
+             <a href="https://codepen.io/AAMutlu20" class="codepen"><ion-icon class="fa fa-github fa-3x" aria-hidden="true"
+                name="logo-codepen"></ion-icon></a>
+            <div class="copyright">
+            <p> Made by<a
+                    href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BPYrYi3g1RAS3NytKWEQmdQ%3D%3D"
+                    target="_blank"> <span>&nbsp;LOG(X)&nbsp;</span></a>
+            </p>
+            </div>
+            </footer> -->
+
+            <!-- <footer class="mobile">
+            <a href="https://github.com/deepkothari12" class="github"><ion-icon class="fa fa-github fa-3x"
+                aria-hidden="true" name="logo-github"></ion-icon></a>
+            <a href="https://codepen.io/AAMutlu20" class="codepen"><ion-icon class="fa fa-github fa-3x" aria-hidden="true"
+                name="logo-codepen"></ion-icon></a>
+            <div class="copyright">
+            <p> Made by <span>&nbsp;Log(X)&nbsp;</span></p>
+            </div>
+            </footer> -->
+
+            <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        </div>
+
+        <div class="footer">
+            <div class="github">
+                <a href="https://github.com/deepkothari12"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <p> Made by
+                <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BPYrYi3g1RAS3NytKWEQmdQ%3D%3D"
+                    target="_blank"> <span>&nbsp;LOG(X)&nbsp;</span></a>
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>
